@@ -12,7 +12,7 @@ export default function NotesToVoice() {
     setAudioUrl(null);
 
     try {
-      const res = await fetch("http://localhost:5000/api/notes-to-voice", {
+      const res = await fetch("https://word-drop-waves.vercel.app/api/notes-to-voice", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: note }),
